@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tip Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Harsh's Tip Calculator</h1>
+
+     <form>
+        <div class="calulator">
+            <label for="billAmount">
+                <p>How much was the bill?</p>
+            </label>
+           
+            ₹ <input type="text" id = "billAmount" placeholder="Amount">
+
+
+            <label for="tip-option">
+                <p>How was your Service?</p>
+            </label>
+           <select name="tip-selection" id="serviceQuality">
+            <option disabled selected value="0">--Choose an option</option>
+            <option value=".3">30%-Outstanding</option>
+            <option value=".2">20%-Good</option>
+            <option value=".15">15%-It was OKay</option>
+            <option value=".1">10%-Bad</option>
+            <option value=".05">5%-Terrible</option>
+           </select>
+
+           <label for="totalPeople">
+            <p>How many people are sharing the bill?</p>
+           </label>
+           <input type="text" id="totalPeople"> <span id="inline">
+            people
+           </span>
+           <br/>
+           <button type="button" id="calculate">calculate</button>
+        </div>
+     </form>
+    
+    
+     <div id="totaldiv">
+        <p>tip Amount</p>
+        ₹ <span id="tip">1.00</span> <span><small id="each">each</small>
+        </span>
+        
+     </div>
+        
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    
+</body>
+</html>
